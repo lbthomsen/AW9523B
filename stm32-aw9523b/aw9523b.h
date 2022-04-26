@@ -7,11 +7,11 @@
 #ifndef AW9523B_H_
 #define AW9523B_H_
 
-#ifdef DEBUGxxx
-#define W25_DBG(...) printf(__VA_ARGS__);\
-                     printf("\n");
+#ifdef DEBUG
+#define AW_DBG(...) printf(__VA_ARGS__);\
+                    printf("\n");
 #else
-#define W25_DBG(...) ;
+#define AW_DBG(...) ;
 #endif
 
 #define W25QXX_MANUFACTURER_GIGADEVICE 0xC8
@@ -27,18 +27,8 @@
 #define W25QXX_READ_REGISTER_1    0x05
 
 typedef struct {
-	SPI_HandleTypeDef *spiHandle;
-	GPIO_TypeDef *cs_port;
-	uint16_t cs_pin;
-	uint8_t manufacturer_id;
-	uint16_t device_id;
-	uint32_t block_size;
-	uint32_t block_count;
-	uint32_t sector_size;
-	uint32_t sectors_in_block;
-	uint32_t page_size;
-	uint32_t pages_in_sector;
-} W25QXX_HandleTypeDef;
+	I2C_HandleTypeDef *i2cHandle;
+} AW9523B_HandleTypeDef;
 
 typedef enum {
 	W25QXX_Ok,     // 0
