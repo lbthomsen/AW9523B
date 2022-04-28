@@ -53,3 +53,7 @@ dkms.conf
 
 # Builds
 build/
+
+*-bak
+fp-info-cache
+

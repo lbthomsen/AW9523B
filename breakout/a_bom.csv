@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC, LCSC
+"100nF","C1","Capacitor_SMD:C_0603_1608Metric","","C14663"
+"~","J1,J2","Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical",""
+"~","JP1,JP2","Jumper:SolderJumper-3_P1.3mm_Bridged2Bar12_Pad1.0x1.5mm",""
+"10k","R1,R2","Resistor_SMD:R_0603_1608Metric","","C25804"
+"AW9523BTQR","U1","Package_DFN_QFN:WQFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm","","C148077"

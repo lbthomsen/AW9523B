@@ -31,15 +31,15 @@ typedef struct {
 } AW9523B_HandleTypeDef;
 
 typedef enum {
-	W25QXX_Ok,     // 0
-    W25QXX_Err,    // 1
-    W25QXX_Timeout // 2
-} W25QXX_result_t;
+	AW9523B_Ok,     // 0
+    AW9523B_Err,    // 1
+    AW9523B_Timeout // 2
+} AW9523B_result_t;
 
-W25QXX_result_t w25qxx_init(W25QXX_HandleTypeDef *w25qxx, SPI_HandleTypeDef *hspi, GPIO_TypeDef *cs_port, uint16_t cs_pin);
-W25QXX_result_t w25qxx_read(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint8_t *buf, uint32_t len);
-W25QXX_result_t w25qxx_write(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint8_t *buf, uint32_t len);
-W25QXX_result_t w25qxx_erase(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint32_t len);
-W25QXX_result_t w25qxx_chip_erase(W25QXX_HandleTypeDef *w25qxx);
+AW9523B_result_t AW9523B_init(AW9523B_HandleTypeDef *aw9523b, I2C_HandleTypeDef *hi2c);
+//W25QXX_result_t w25qxx_read(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint8_t *buf, uint32_t len);
+//W25QXX_result_t w25qxx_write(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint8_t *buf, uint32_t len);
+//W25QXX_result_t w25qxx_erase(W25QXX_HandleTypeDef *w25qxx, uint32_t address, uint32_t len);
+//AW9523B_result_t w25qxx_chip_erase(W25QXX_HandleTypeDef *w25qxx);
 
 #endif /* AW9523B_H_ */

@@ -1,3 +1,11 @@
-{
-    "makefile.extensionOutputFolder": "./.vscode"
+{    
+    "cortex-debug.gdbPath": "gdb-multiarch",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "//home/lth/src/AW9523B/aw9523b-demo-blackpill/build",
+            "binaryPath": "/home/lth/src/AW9523B/aw9523b-demo-blackpill/build",
+            "binaryArgs": []
+        }
+    ],
+    "cortex-debug.variableUseNaturalFormat": true
 }

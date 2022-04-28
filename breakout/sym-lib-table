@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "gpioexp-rescue")(type "KiCad")(uri "${KIPRJMOD}/gpioexp-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "gpioexp")(type "KiCad")(uri "${KIPRJMOD}/gpioexp.kicad_sym")(options "")(descr ""))
+)
