@@ -2,7 +2,7 @@
 <export version="E">
   <design>
     <source>/home/lth/src/AW9523B/breakout/gpioexp.kicad_sch</source>
-    <date>Thu 28 Apr 2022 11:06:21 +08</date>
+    <date>Sat 30 Apr 2022 09:26:11 +08</date>
     <tool>Eeschema 6.0.4+dfsg-1+b1</tool>
     <textvar name="AUTHOR">Lars Boegild Thomsen</textvar>
     <textvar name="EMAIL">lbthomsen@gmail.com</textvar>
@@ -29,19 +29,6 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>100nF</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <fields>
-        <field name="LCSC">C14663</field>
-      </fields>
-      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C14663"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="gpioexp.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>00000000-0000-0000-0000-00005f0a0ce3</tstamps>
-    </comp>
-    <comp ref="C2">
       <value>1uF</value>
       <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
       <fields>
@@ -53,6 +40,19 @@
       <property name="Sheetfile" value="gpioexp.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>00000000-0000-0000-0000-00005f15580b</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <fields>
+        <field name="LCSC">C14663</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="LCSC" value="C14663"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="gpioexp.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00005f0a0ce3</tstamps>
     </comp>
     <comp ref="J1">
       <value>~</value>
